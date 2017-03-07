@@ -1,5 +1,7 @@
 package org.launchcode.techjobs.console;
 
+import com.sun.xml.internal.bind.v2.TODO;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -110,7 +112,13 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-
-        System.out.println("printJobs is not implemented yet");
+        /* TODO: Implement printJobs function */
+        for (HashMap<String, String> eachJob : someJobs) {
+            for (String key : eachJob.keySet()) {
+                System.out.println(key + ": " + eachJob.get(key));
+            }
+            System.out.println();
+        }
+        // System.out.println("printJobs is not implemented yet");
     }
 }
